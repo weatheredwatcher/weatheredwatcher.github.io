@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+title: Webpage of Max Horn
+description: 'This is the Webpage of Max Horn, PhD Student in Machine Learning and Computational Biology'
+url: 'https://maexlich.github.io'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Max Horn'
+  email: maexlich@gmail.com
+  twitter_username: maexlich
+#  facebook_username: joshgerdes
+  github_username:  maexlich
+#  linkedin_username:  joshgerdes
 
 defaults:
   -
