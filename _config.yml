@@ -9,9 +9,9 @@ baseurl: ''
 author:
   name: 'Max Horn'
   email: maexlich@gmail.com
-  twitter_username: maexlich
+  twitter_username: ExpectationMax
 #  facebook_username: joshgerdes
-  github_username:  maexlich
+  github_username:  ExpectationMax
 #  linkedin_username:  joshgerdes
 
 defaults:
