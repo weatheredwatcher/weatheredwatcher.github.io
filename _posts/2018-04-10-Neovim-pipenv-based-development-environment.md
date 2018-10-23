@@ -6,7 +6,7 @@ tags: [development]
 ---
 I think everybody has been there after some time:
 
-* multiple python venvs for dozends of projects
+ * multiple python venvs for dozends of projects
  * huge `requirements.txt` files containing all dependencies of dependencies
  * JuPyter notebooks everywhere, including their dependecies
 
@@ -46,7 +46,7 @@ This allows allows the appropriate kernel to be launched from a jupyter notebook
 For the vim users out there, I will explain how you can convert vim into an interactive developing environment similar to working in a jupyter notebook or using an ide like spyder.
 This setup involves launching an IPython kernel in a QTConsole, establishing a remote connection to the kernel using the `nvim-ipy` plugin and configuring the QTConsole such that it outputs the results of remote commands. The result is quite accepatble:
 
-Picture here
+![Screenshot of working environment](/assets/2018-04-10_Oni-and-QtConsole.png)
 
 ### Running QtConsole from vim using correct kernel
 The benefit of the QTConsole is that the output of a command is diectly visible, allowing interactive programming with intermediate plots and variable inspection.
