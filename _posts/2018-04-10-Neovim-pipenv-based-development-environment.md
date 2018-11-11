@@ -40,10 +40,9 @@ The trick is, that we only need to install the JuPyter kernel in the individual 
 
 The kernel package that is required for a jupyter/IPython interface (notebook, QT Console, console) to communicate with an environment is `ipykernel`, which can be installed as an development dependency in pipenv (`pipenv install --dev ipykernel`).
 Afterwards, the new kernel needs to be registered with the global JuPyter installation.
-In order to make the whole process easier, I wrote added a small bash function to my `~/.bashrc` to create a Python 3 environment, install ipykernel as a development dependency and register the new kernel for usage.
-It first sets up a pipenv environment in the current folder, installs `ipykernel` as a development dependency in the virtual environment and finally registers the kernel to the global JuPyter installation.
+In order to make the whole process easier, I wrote added a small bash function to my `~/.bashrc` to create a Python 3 environment, install `ipykernel` as a development dependency and register the new kernel for usage in the global JuPyter installation.
 
-Add the following lines to your `~/.bashrc`:
+To get the same functionality, add the following lines to your `~/.bashrc`:
 ```bash
 init_python3_pipenv () {
    echo "Setting up pipenv environment"
@@ -59,7 +58,7 @@ init_python3_pipenv () {
 }
 ```
 
-A new project can now easily be installed using:
+A new project can now easily be set up using:
 
 ```bash
 mkdir ~/Projects/MyAwesomeProject
