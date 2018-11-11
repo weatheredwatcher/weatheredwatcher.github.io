@@ -85,31 +85,33 @@ As I only use Python 3 for development on an macOS operating system, I got the Q
 ```bash
 brew install sip --without-python@2
 brew install pyqt --with-python3 --without-python@2
-
 ```
 
-
+For integration with vim I use the [nvim-ipy](https://github.com/bfredl/nvim-ipy) vim plugin, which can be installed using your favorite vim plugin manager (I personally use [vim-plug](https://github.com/junegunn/vim-plug)).
+The following command rely on the installation of `nvim-ipy`.
 To allow the QT Console to easily be launched using the correct kernel and from within vim, I defined the following vim functions in my `init.vim`
 
 ```vimscript
 function! GetKernelFromPipenv()
-    return tolower(system('basename $(pipenv --venv)'))
+    let a:kernel = tolower(system('basename $(pipenv --venv)'))
+    " Remove control characters (most importantly newline)
+    return substitute(a:kernel, '[[:cntrl:]]', '', 'g')
 endfunction
 
-function! StartConsolePipenv(console)
-    let a:flags = '--kernel ' . GetKernelFromPipenv()
-    let a:command=a:console . ' ' . a:flags
-    echo a:command
-    call jobstart(a:command)
+function! ConnectToPipenvKernel()
+    let a:kernel = GetKernelFromPipenv()
+    call IPyConnect('--kernel', a:kernel, '--no-window')
 endfunction
-```
 
-And added corresponding commands
+function! AddFilepathToSyspath()
+    let a:filepath = expand('%:p:h')
+    call IPyRun('import sys; sys.path.append("' . a:filepath . '")')
+    echo 'Added ' . a:filepath . ' to pythons sys.path'
+endfunction
 
-```vimscript
-command! -nargs=0 RunQtPipenv call StartConsolePipenv('jupyter qtconsole')
-command! -nargs=0 RunPipenvKernel terminal pipenv run python -m ipykernel
+command! -nargs=0 ConnectToPipenvKernel call ConnectToPipenvKernel()
 command! -nargs=0 RunQtConsole call jobstart("jupyter qtconsole --existing")
+command! -nargs=0 AddFilepathToSyspath call AddFilepathToSyspath()
 ```
 
 
