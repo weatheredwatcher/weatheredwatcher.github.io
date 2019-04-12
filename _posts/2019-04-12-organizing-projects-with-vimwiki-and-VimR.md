@@ -99,7 +99,7 @@ file should look as follows:
 This adds MathJax in the most light configuration to the markdown template,
 allowing it to render math equations. Below you can see how the result looks:
 
-![Vimr with markdown preview](assets/2019-04-12_VimR_equations.jpg)
+![Vimr with markdown preview](/assets/2019-04-12_VimR_equations.jpg)
 
 While this works well in practice, it is still a rather hacky solution. For
 example sometimes it is necessary to wrap the equation into a set of `<p></p>`
