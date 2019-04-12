@@ -109,5 +109,4 @@ issue [here](https://github.com/qvacua/vimr/issues/718). I will edit this post
 if there is any follow up development.
 
 
-[^1]: I am planning to do a separate blog post on the benefits and
-  disadvantages of using an editor like Vim for most of your work.
+[^1]: I am planning to do a separate blog post on the benefits and disadvantages of using an editor like Vim for most of your work.
