@@ -1,6 +1,7 @@
 # Site settings
 title: Webpage of Max Horn
-description: 'This is the Webpage of Max Horn, PhD Student in Machine Learning and Computational Biology'
+description: 
+    This is the Webpage of Max Horn, PhD Student in Machine Learning and Computational Biology at ETH Zürich.
 url: 'https://maexlich.github.io'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
@@ -10,6 +11,7 @@ author:
   name: 'Max Horn'
   email: maexlich@gmail.com
   twitter_username: ExpectationMax
+  cv_path: assets/Max_Horn-CV.pdf
 #  facebook_username: joshgerdes
   github_username:  ExpectationMax
 #  linkedin_username:  joshgerdes
@@ -40,4 +42,4 @@ kramdown:
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'vendor']

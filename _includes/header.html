@@ -21,6 +21,13 @@
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
               <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+            {% if site.author.cv_path %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                  <a href="{{ site.baseutl }}/{{ site.author.cv_path }}" title="Max Horn - Curriculum Vitae" target="_blank"><i class="icon icon-torso"></i> CV</a>
+              </li>
+            {% endif %}
+
             </ul>
           </nav>
 
