@@ -96,7 +96,8 @@ feature requests if you need any further features. See you next time!
 
 
 [xkcd-networking]: https://imgs.xkcd.com/comics/networking_problems.png "LOOK, THE LATENCY FALLS EVERY TIME YOU CLAP YOUR HANDS AND SAY YOU BELIEVE"
+
 [^gnu-parallel]: [GNU parallel](https://www.gnu.org/software/parallel/)
-  can be used to do something similar (see the [HN
-  discussion](https://news.ycombinator.com/item?id=21269950)). It is
-  significantly more flexible, which IMHO comes at the cost of ease of use.
+    can be used to do something similar (see the
+    [HN discussion](https://news.ycombinator.com/item?id=21269950)). It is
+    significantly more flexible, which IMHO comes at the cost of ease of use.
