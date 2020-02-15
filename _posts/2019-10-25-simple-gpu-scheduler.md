@@ -14,9 +14,9 @@ While it would be possible to connect the servers to a small cluster with
 a scheduling system (we are working on it!), this can take a long time until it
 is set up. Especially in academia where the maintenance and setup of servers is
 often delegated to the departments IT-team, the path to implementing a small
-scale cluster is littered with bureaucracy. Questions like: __Who is
-responsible for xyz?__, __How are the software installations managed?__,
-__Which alterations should be done to have the correct network architecture?__
+scale cluster is littered with bureaucracy. Questions like: _Who is
+responsible for xyz?_, _How are the software installations managed?_,
+_Which alterations should be done to have the correct network infrastructure?_
 can take ages before they are answered and appropriately implemented. In our
 particular case we had the idea of refurbishing the cluster more than a year
 ago and are still no where close to having it up and running.
