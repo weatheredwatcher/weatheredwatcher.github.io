@@ -1,6 +1,6 @@
 # Site settings
 title: Personal Webpage of Max Horn
-description: 
+description:
     This is the personal webpage of Max Horn, PhD Student in Machine Learning and Computational Biology at ETH Zürich.
 url: 'https://ExpectationMax.github.io'
 baseurl: ''
