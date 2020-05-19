@@ -4,7 +4,7 @@ description:
     This is the personal webpage of Max Horn, PhD Student in Machine Learning and Computational Biology at ETH Zürich.
 url: 'https://ExpectationMax.github.io'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-167128850-1'
 disqus_shortname: 'ExpectationMax'
 
 author:
