@@ -23,8 +23,10 @@ direct application.  For further details please see the links below:
 
 Paper
 : [ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/613-Paper.pdf) [arXiv](https://arxiv.org/abs/1909.12064)
+
 Talk
 : [ICML 2020](https://icml.cc/virtual/2020/poster/6545), [Slides](/assets/2020-07-16-ICML-SeFT-TopoAE/SeFT-slides.pdf)
+
 Code
 : [Models](https://github.com/BorgwardtLab/Set_Functions_for_Time_Series), [Datasets](https://github.com/ExpectationMax/medical_ts_datasets)
 
@@ -40,12 +42,14 @@ introduction [here](https://michaelmoor.ml/blog/topoae/main/).
 Below you can see our devised approach in
 action compared to a vanilla autoencoder.
 
-<img alt="Training visualization Topological Autoencoder" src="assets/2020-07-16-ICML-SeFT-TopoAE/topoae.gif" width="50%"> <img alt="Training visualization Vanilla Autoencoder" src="assets/2020-07-16-ICML-SeFT-TopoAE/vanilla.gif" width="50%">
+<img alt="Training visualization Topological Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/topoae.gif" width="50%"> <img alt="Training visualization Vanilla Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/vanilla.gif" width="50%">
 
 Paper
 : [ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/613-Paper.pdf) [arXiv](https://arxiv.org/abs/1906.00722)
+
 Talk
 : [ICML 2020](https://icml.cc/virtual/2020/poster/5851), [Slides](/assets/2020-07-16-ICML-SeFT/TopoAE-slides.pdf)
+
 Code
 : [GitHub](https://github.com/BorgwardtLab/topological-autoencoders)
 
