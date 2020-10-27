@@ -1,7 +1,12 @@
 # Site settings
 title: Personal Webpage of Max Horn
-description:
-    This is the personal webpage of Max Horn, PhD Student in Machine Learning and Computational Biology at ETH Zürich.
+description: >
+    I'm a PhD Student in Machine Learning and Computational Biology and work on
+    the development of deep learning methods for real world medical time series.
+    My interests include but are not limited to: Machine Learning for Healthcare,
+    Probabilistic Modelling, Time Series Modelling and Interpretable Machine Learning.
+
+    Here I write about stuff I care about in the realm of science, programming and technology.
 url: 'https://ExpectationMax.github.io'
 baseurl: ''
 google_analytics: 'UA-167128850-1'
