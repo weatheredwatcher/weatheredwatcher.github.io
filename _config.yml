@@ -1,13 +1,16 @@
 # Site settings
 title: Personal Webpage of Max Horn
 description: >
-    I'm a PhD Student in Machine Learning and Computational Biology and work on
-    the development of deep learning methods for real world medical time series.<br /><br />
+    I'm a PhD Student in Machine Learning and Computational Biology at ETH
+    Zürich and work on the development of <b>deep learning methods for real world
+    medical time series</b>.<br />
 
-    My interests include but are not limited to: Machine Learning for Healthcare,
-    Probabilistic Modelling, Time Series Modelling and Interpretable Machine Learning.<br /><br />
+    My interests include but are not limited to: <b>Machine Learning for
+    Healthcare</b>, <b>Probabilistic Modelling</b>, <b>Time Series Modelling</b> and
+    <b>Interpretable Machine Learning</b>.<br />
 
-    Here I write about stuff I care about in the realm of science, programming and technology.
+    Here I write about stuff I care about in the realm of science, programming
+    and technology.
 url: 'https://ExpectationMax.github.io'
 baseurl: ''
 google_analytics: 'UA-167128850-1'
