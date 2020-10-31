@@ -18,7 +18,7 @@ not an expert in this field and I am solely summarizing the most interesting
 points according to my personal opinion :).
 
 ### Causality I
-The first lecture by Prof.\ B.\ Schölkopf was a more general introduction to
+The first lecture by Prof. B. Schölkopf was a more general introduction to
 causality, the required terms needed to understand the literature, how to
 infer causal structure in smaller scale experiments with stochastic or
 deterministic relationships between observations and finally the implications
@@ -40,14 +40,14 @@ $X \rightarrow Y$ if  $\int \log | f'(x) | p(x) dx \leq \int \log | f^{-1}(y)|
 p(y) dy $. This can also be computed using empirical estimators for the
 slope of the function mapping between X and Y.
 
-Finally, B.\ Schölkopf presented implications of causality in the domain of
+Finally, B. Schölkopf presented implications of causality in the domain of
 semi-supervised learning. In particular, if *independence of input and
 mechanism* is true, he shows that semi-supervised learning can theoretically not
 benefit learning in the causal direction. In other words when a model is trying
 to infer effect from cause (thus $p(E|C)$), additional data from the cause
-distribution $p(C)$ will not help the model learn due to $ p(C) \perp \!\!\!
-\perp p(E|C) $. In contrast, if learning is in the anti-causal direction,
-semi-supervised learning can be beneficial.
+distribution $p(C)$ will not help the model learn due to $ p(C) $ being
+independent of $ p(E|C) $. In contrast, if learning is in the anti-causal
+direction, semi-supervised learning can be beneficial.
 
 ### Causality II
 The second talk by Stefan Bauer focused on how to infer Structural Causal
