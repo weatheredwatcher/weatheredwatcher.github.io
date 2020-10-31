@@ -40,14 +40,14 @@ The work "Topological Autoencoders" was joint work with my colleagues [Michael
 Moor](https://michaelmoor.ml/) and [Bastian Rieck](https://bastian.rieck.me/)
 and my PhD Advisor Karsten Borgwardt.
 
+<img alt="Training visualization Topological Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/topoae.gif" width="49%"><img alt="Training visualization Vanilla Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/vanilla.gif" width="49%">
+
 In this work we propose to constrain the topology of the  latent representation
 of an autoencoder using methods from topological data analysis.
 Michael wrote a wonderful blog post about the paper giving an intuitive
 introduction [here](https://michaelmoor.ml/blog/topoae/main/).
 Below you can see our devised approach in
 action compared to a vanilla autoencoder.
-
-<img alt="Training visualization Topological Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/topoae.gif" width="50%"> <img alt="Training visualization Vanilla Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/vanilla.gif" width="50%">
 
 **Paper:**
 [ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/613-Paper.pdf),
