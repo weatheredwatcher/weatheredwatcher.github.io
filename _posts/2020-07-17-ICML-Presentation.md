@@ -19,7 +19,11 @@ Rieck](https://bastian.rieck.me/) and my PhD Advisor Karsten Borgwardt.
 In the core we propose to rephrase learning on irregularly sampled time series
 data as a set classification problem. This mitigates the necessity of imputing
 time series prior to the application of Deep Learning models and allows their
-direct application.  For further details please see the links below:
+direct application.  Michael Larionov wrote a nice summary of our paper
+[on towards data science](https://towardsdatascience.com/set-attention-models-for-time-series-classification-c09360a60349)
+where he explains the core components of the model.
+
+For further details please see the links below:
 
 **Paper:**
 [ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/4750-Paper.pdf),
