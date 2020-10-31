@@ -33,7 +33,7 @@ distribution of the cause) and $$p(E|C)$$ (the probability distribution of the
 effect conditional on the cause) should be independent. This implies, that the
 distribution of the effect would then in some way be dependent on the function
 $$f$$ mapping from cause to effect and thus $$Cov(log f', p_C) = 0$$ (encoding
-the independence assumption) and $$Cov(log f^{-1}', p_E) > 0 (encoding the
+the independence assumption) and $$Cov(log f^{-1}', p_E) > 0$$ (encoding the
 dependence between the function mapping from cause to effect and the
 distribution of the effect). This leads to the inference rule that $$
 X \rightarrow Y $$ if  $$ \int \log |f'(x)| p(x) dx \leq \int \log | f^{-1}'(y)
