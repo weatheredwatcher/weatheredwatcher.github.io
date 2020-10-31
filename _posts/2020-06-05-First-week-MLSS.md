@@ -28,25 +28,25 @@ Here I found the work on deriving causality for deterministic cases of
 particular interest (see [this](https://arxiv.org/abs/1203.3475) paper).  In
 this work, the authors use an assumption termed the *independence of input and
 mechanism* to derive a causal inference rule which does not require any
-assumptions on noise. The assumption states, that $$p(C)$$ (the probability
-distribution of the cause) and $$p(E|C)$$ (the probability distribution of the
+assumptions on noise. The assumption states, that $ p(C) $ (the probability
+distribution of the cause) and $p(E|C)$ (the probability distribution of the
 effect conditional on the cause) should be independent. This implies, that the
 distribution of the effect would then in some way be dependent on the function
-$$f$$ mapping from cause to effect and thus $$Cov(log f', p_C) = 0$$ (encoding
-the independence assumption) and $$Cov(log f^{-1}', p_E) > 0$$ (encoding the
+$f$ mapping from cause to effect and thus $Cov(log f', p_C) = 0$ (encoding
+the independence assumption) and $Cov(log f^{-1'}, p_E) > 0$ (encoding the
 dependence between the function mapping from cause to effect and the
-distribution of the effect). This leads to the inference rule that $$
-X \rightarrow Y $$ if  $$ \int \log |f'(x)| p(x) dx \leq \int \log | f^{-1'}(y)
-| p(y) dy $$. This can also be computed using empirical estimators for the
+distribution of the effect). This leads to the inference rule that
+$X \rightarrow Y$ if  $\int \log | f'(x) | p(x) dx \leq \int \log | f^{-1}(y)|
+p(y) dy $. This can also be computed using empirical estimators for the
 slope of the function mapping between X and Y.
 
 Finally, B.\ Schölkopf presented implications of causality in the domain of
 semi-supervised learning. In particular, if *independence of input and
 mechanism* is true, he shows that semi-supervised learning can theoretically not
 benefit learning in the causal direction. In other words when a model is trying
-to infer effect from cause (thus $$p(E|C)$$), additional data from the cause
-distribution $$p(C)$$ will not help the model learn due to $$ p(C) \perp \!\!\!
-\perp p(E|C) $$. In contrast, if learning is in the anti-causal direction,
+to infer effect from cause (thus $p(E|C)$), additional data from the cause
+distribution $p(C)$ will not help the model learn due to $ p(C) \perp \!\!\!
+\perp p(E|C) $. In contrast, if learning is in the anti-causal direction,
 semi-supervised learning can be beneficial.
 
 ### Causality II
