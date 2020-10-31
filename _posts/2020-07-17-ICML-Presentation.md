@@ -1,5 +1,5 @@
 ---
-title:  "Presentation of Set Function for Time Series and Topological Autoencoders at ICML 2020"
+title:  "Two of our papers were accepted at ICML 2020"
 date:   2020-07-17
 categories: [summaries, papers]
 tags: [conferences, publications]
@@ -21,14 +21,15 @@ data as a set classification problem. This mitigates the necessity of imputing
 time series prior to the application of Deep Learning models and allows their
 direct application.  For further details please see the links below:
 
-Paper
-: [ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/4750-Paper.pdf) [arXiv](https://arxiv.org/abs/1909.12064)
+**Paper:**
+[ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/4750-Paper.pdf),
+[arXiv](https://arxiv.org/abs/1909.12064)
 
-Talk
-: [ICML 2020](https://icml.cc/virtual/2020/poster/6545), [Slides](/assets/2020-07-16-ICML-SeFT-TopoAE/SeFT-slides.pdf)
+**Talk:**
+[ICML 2020](https://icml.cc/virtual/2020/poster/6545), [Slides](/assets/2020-07-16-ICML-SeFT-TopoAE/SeFT-slides.pdf)
 
-Code
-: [Models](https://github.com/BorgwardtLab/Set_Functions_for_Time_Series), [Datasets](https://github.com/ExpectationMax/medical_ts_datasets)
+**Code:**
+[Models](https://github.com/BorgwardtLab/Set_Functions_for_Time_Series), [Datasets](https://github.com/ExpectationMax/medical_ts_datasets)
 
 ## Topological Autoencoders
 The work "Topological Autoencoders" was joint work with my colleagues [Michael
@@ -44,12 +45,12 @@ action compared to a vanilla autoencoder.
 
 <img alt="Training visualization Topological Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/topoae.gif" width="50%"> <img alt="Training visualization Vanilla Autoencoder" src="/assets/2020-07-16-ICML-SeFT-TopoAE/vanilla.gif" width="50%">
 
-Paper
-: [ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/613-Paper.pdf) [arXiv](https://arxiv.org/abs/1906.00722)
+**Paper:**
+[ICML 2020](https://proceedings.icml.cc/static/paper_files/icml/2020/613-Paper.pdf),
+[arXiv](https://arxiv.org/abs/1906.00722)
 
-Talk
-: [ICML 2020](https://icml.cc/virtual/2020/poster/5851), [Slides](/assets/2020-07-16-ICML-SeFT-TopoAE/TopoAE-slides.pdf)
+**Talk:**
+[ICML 2020](https://icml.cc/virtual/2020/poster/5851), [Slides](/assets/2020-07-16-ICML-SeFT-TopoAE/TopoAE-slides.pdf)
 
-Code
-: [GitHub](https://github.com/BorgwardtLab/topological-autoencoders)
+**Code:** [GitHub](https://github.com/BorgwardtLab/topological-autoencoders)
 
