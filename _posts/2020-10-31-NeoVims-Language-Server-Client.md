@@ -17,6 +17,10 @@ When I first looked into using the NeoVims internal language server, [jdhao's
 blog post](https://jdhao.github.io/2019/11/20/neovim_builtin_lsp_hands_on/)
 really helped me out -- I invite you to check it out as an additional resource.
 
+## Table of Contents
+* TOC
+{:toc}
+
 ## The Language Server Protocol -- What's all the fuss about
 In essence the Language Server Protocol seeks to separate the functionality of
 an IDE into two components:
