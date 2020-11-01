@@ -169,7 +169,7 @@ local vim = vim
 local api = vim.api
 local buf = require 'vim.lsp.buf'
 
-M['textDocument/publishDiagnostics'] = function(_, _, result)
+vim.lsp.callbacks['textDocument/publishDiagnostics'] = function(_, _, result)
   if not result then return end
   local uri = result.uri
   local bufnr = vim.uri_to_bufnr(uri)
