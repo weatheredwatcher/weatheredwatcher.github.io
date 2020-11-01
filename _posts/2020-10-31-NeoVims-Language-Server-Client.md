@@ -91,20 +91,21 @@ autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
 which executes the line between the `EOF` statements as lua code. This is
 required as we are configuring a plugin written in lua.  We need
 to configure vim to actually use the Language Server Client for providing
-completions. This is done in the last line of the snippet by setting omnifunc,
-which allows us to trigger completion using `<C-x><C-o>`.  While this works, it
-is by far not optimal, as the completion calls take place synchronously, at the
-end of the article I will give some pointers on how to improve the experience
-by using completion managers.
+completions. This is done in the last line of the snippet by setting
+`omnifunc`, which allows us to trigger completion using `<C-x><C-o>`.  While
+this works, it is by far not optimal, as the completion calls take place
+synchronously, at the end of the article I will give some pointers on how to
+improve the experience by using completion managers.
 
 ## Faster completion
 To my knowledge there are currently two completion managers which support the
-NeoVim internal Language Serve Client: [NCM2](https://github.com/ncm2/ncm2) and
-[completion-nvim](https://github.com/nvim-lua/completion-nvim) where the first is
-written largely in python and the second is written in lua.  When I first
-tested `completion-nvim` I ran into some issues which was probably due to the
-freshness of the project this can be a different story now.  Nevertheless,
-I will here show how to set up `NCM2` as this is what I went for in the end.
+NeoVims built-in Language Server Client: [NCM2](https://github.com/ncm2/ncm2)
+and [completion-nvim](https://github.com/nvim-lua/completion-nvim) where the
+first is written largely in python and the second is written in lua.  When
+I first tested `completion-nvim` I ran into some issues which was probably due
+to the freshness of the project this can be a different story now.
+Nevertheless, I will here show how to set up `NCM2` as this is what I went for
+in the end.
 
 First you need to of course install and enable `NCM2` for Plug this can be done
 using the following commands
@@ -124,15 +125,12 @@ enter.
 `NCM2` has support for the NeoVim built-in Language Server Client (see this
 [pull request](https://github.com/ncm2/ncm2/pull/178)), but it does
 not yet seem to be well documented.  The support can be activated by adding
-a callback to the language server setup routine described above
+a callback to the language server setup routine we called previously
 
 ```vimscript
 
 " Setup language server client
 lua << EOF
-local nvim_lsp = require('nvim_lsp')
-local ncm2 = require('ncm2')
-
 require('nvim_lsp').pyls.setup({
     on_init = require('ncm2').register_lsp_source,
 });
@@ -153,7 +151,7 @@ as virtual text at the end of the line rather annoying.  When I program
 I prefer to only see the code and not some additional text indicating that this
 function is missing a docstring etc. Changing the behaviour of NeoVims internal
 Language Server Client can be done by modifying the callbacks it triggers when
-it gets information from the Language Aerver.  The default callbacks are defined
+it gets information from the Language Server.  The default callbacks are defined
 [here](https://github.com/neovim/neovim/blob/master/runtime/lua/vim/lsp/callbacks.lua).
 
 The callback of our interest is
@@ -243,10 +241,10 @@ highlight LspDiagnosticsUnderlineInfo guifg=NONE guibg=NONE guisp=#83a598 gui=un
 ```
 
 The values above are set to match the [gruvbox
-8 colorscheme](https://github.com/lifepillar/vim-gruvbox8) and a terminal
+8 color scheme](https://github.com/lifepillar/vim-gruvbox8) and a terminal
 supporting true color. They can be adapted to your personal
 taste[^vim-highlighting].  If you want them to change dependent on your
-colorscheme you should check out the vim predefines highlight groups (see
+color scheme you should check out the vim predefines highlight groups (see
 `:help highligh-groups`) and map accordingly using `highlight link`.  You
 should keep in mind to set these after setting your color scheme though
 otherwise you might run into problems.
@@ -268,7 +266,7 @@ wholistic approach would be to override the tagstack functionality using
 a custom `tagfunc`. I found a [single
 reference](https://daisuzu.hatenablog.com/entry/2019/12/06/005543) on the
 Japanese internet where somebody does exactly this. I adopted the code slightly
-to work with the NeoVim internal Language Server Client[^add-reference].
+to work with the NeoVim internal Language Server Client[^additional-reference].
 ```lua
 local lsp = require 'vim.lsp'
 local util = require 'vim.lsp.util'
@@ -387,6 +385,8 @@ function! LspRename()
     call inputrestore()
     call luaeval('vim.lsp.buf.rename("'.l:newname.'")')
 endfunction
+
+nnoremap <buffer> <leader>lr <cmd>call LspRename()<CR>
 ```
 
 #### Keybindings
@@ -414,7 +414,6 @@ endfunction
 function SetupPython()
     setlocal colorcolumn=80
     setlocal tw=79
-    setlocal signcolumn=yes
     setlocal spell
     setlocal tabstop=4 shiftwidth=4 expandtab
     call SetupLsp()
@@ -445,8 +444,8 @@ See you next time!
 [^vim-highlighting]: Check out `:help highlight-cterm` and `:help
   highlight-gui` for the available settings.
 
-[^add-reference]: There was a further reference on the path to accomplishing
-  this [here](https://daisuzu.hatenablog.com/entry/2019/12/06/005543) yet the
+[^additional-reference]: There was a further reference on the path to
+  accomplishing this
+  [here](https://daisuzu.hatenablog.com/entry/2019/12/06/005543) yet the
   webpage seems down now.
-to accomplishing this .
 
