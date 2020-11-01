@@ -18,7 +18,7 @@ When I first looked into using the NeoVims internal language server, [jdhao's
 blog post](https://jdhao.github.io/2019/11/20/neovim_builtin_lsp_hands_on/)
 really helped me out -- I invite you to check it out as an additional resource.
 
-## Table of Contents
+**Table of Contents:** 
 * TOC
 {:toc}
 
@@ -129,7 +129,6 @@ not yet seem to be well documented.  The support can be activated by adding
 a callback to the language server setup routine we called previously
 
 ```vimscript
-
 " Setup language server client
 lua << EOF
 require('nvim_lsp').pyls.setup({
