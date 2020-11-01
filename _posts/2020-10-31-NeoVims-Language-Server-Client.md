@@ -1,5 +1,5 @@
 ---
-title:  "Neovims built-in LanguageServer Client and why you should use it"
+title:  "Neovims built-in Language Server Client and why you should use it"
 date:   2020-10-31
 categories: [development]
 tags: [development]
@@ -156,11 +156,13 @@ The callback of our interest is
 ["textDocument/publishDiagnostics"](https://github.com/neovim/neovim/blob/ca7449db46062098cc9b0c84401655cba7d3a53f/runtime/lua/vim/lsp/callbacks.lua#L76).
 Here we simply want to remove the line
 `util.buf_diagnostics_virtual_text(bufnr, result.diagnostics)` which adds the
-virtual text annotations.  We can patch this by adding the following to our
-config
+virtual text annotations.  We can patch this by adding the following lua code
+to our config (i.e. if you add this in your vim config you should surround it
+with a `lua << EOF` / `EOF` block, I left this out for the sake of correct
+syntax highlighting
 
-```vimscript
-lua << EOF
+```lua
+--- Evtl. add `lua << EOF` here
 --- Define our own callbacks
 local util = require 'vim.lsp.util'
 local vim = vim
@@ -208,7 +210,7 @@ M['textDocument/publishDiagnostics'] = function(_, _, result)
   util.buf_diagnostics_signs(bufnr, result.diagnostics)
   vim.api.nvim_command("doautocmd User LspDiagnosticsChanged")
 end
-EOF
+--- Evtl. add `EOF` here
 ```
 
 Which does exactly the same as the original callback but comments out the line
@@ -225,7 +227,7 @@ Additionally, we probably want to set the colors used to indicate a error or
 warning to fit to the color scheme we using.  This can be done by defining the
 appropriate highlight groups
 
-```vimscipt
+```vimscript
 " Highlighting applied to floating window
 highlight LspDiagnosticsErrorFloating guifg=#fb4934 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 highlight LspDiagnosticsWarningFloating guifg=#fabd2f gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -339,7 +341,7 @@ setlocal tagfunc=v:lua.tagfunc_nvim_lsp
 ### Additional goodies
 
 #### Highlighting references to variable under the cursor
-```vimscipt
+```vimscript
 autocmd CursorHold  <buffer> lua vim.lsp.buf.document_highlight()
 autocmd CursorHoldI <buffer> lua vim.lsp.buf.document_highlight()
 autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
@@ -355,7 +357,7 @@ highlight! link LspReferenceWrite LspReference
 The below snippet implements formatting the file when triggering a write to
 disk.  It needed some additional fixes to prevent the cursor position from
 being lost after the reformat[^preserve-cursor-position].
-```vimscipt
+```vimscript
 function! Preserve(command)
     try
         " Preparation: save last search, and cursor position.
@@ -374,7 +376,7 @@ autocmd BufWritePre <buffer> call Preserve('lua vim.lsp.buf.formatting_sync(nil,
 
 #### Renaming variables
 The below snippet allows you to rename the variable under the cursor:
-```vimscipt
+```vimscript
 function! LspRename()
     call inputsave()
     let l:newname = input('Rename to: ')
@@ -416,6 +418,14 @@ endfunction
 
 autocmd Filetype python call SetupPython()
 ```
+
+## Summary
+I hope you found the above pointers and snippets helpful.  For me switching to
+the built-in language server client gave a huge jump in performance and
+responsiveness of my favorite editor :).  Let me know if you have any comments,
+suggestions or issues!
+
+See you next time!
 
 
 [language-server-sum]: https://microsoft.github.io/language-server-protocol/overviews/lsp/img/language-server-sequence.png
