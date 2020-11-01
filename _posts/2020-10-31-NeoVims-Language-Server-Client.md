@@ -1,5 +1,5 @@
 ---
-title:  "Neovims built-in Language Server Client and why you should use it"
+title:  "NeoVims built-in Language Server Client and why you should use it"
 date:   2020-10-31
 categories: [development]
 tags: [development]
