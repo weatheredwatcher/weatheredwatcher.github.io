@@ -33,7 +33,7 @@ components to interact with each other.  An example of such a communication can
 be seen below[^language-server-img-src].
 
 ![Visualization of the communication between Language Server and Language
-Server Client][language-server-com]
+Server Client][language-server-communication]
 
 The benefit of splitting the services of an IDE into two components becomes
 quite apparent: If every Language Server and Language Server Client follow
@@ -159,7 +159,7 @@ Here we simply want to remove the line
 virtual text annotations.  We can patch this by adding the following lua code
 to our config (i.e. if you add this in your vim config you should surround it
 with a `lua << EOF` / `EOF` block, I left this out for the sake of correct
-syntax highlighting
+syntax highlighting)
 
 ```lua
 --- Evtl. add `lua << EOF` here
@@ -428,7 +428,7 @@ suggestions or issues!
 See you next time!
 
 
-[language-server-sum]: https://microsoft.github.io/language-server-protocol/overviews/lsp/img/language-server-sequence.png
+[language-server-communication]: https://microsoft.github.io/language-server-protocol/overviews/lsp/img/language-server-sequence.png
 
 [^language-server-img-src]: The visualization is taken form the language server
   protocol documentation available
