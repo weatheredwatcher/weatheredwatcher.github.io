@@ -433,19 +433,10 @@ See you next time!
 
 [language-server-communication]: https://microsoft.github.io/language-server-protocol/overviews/lsp/img/language-server-sequence.png
 
-[^language-server-img-src]: The visualization is taken form the language server
-  protocol documentation available
-  [here](https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/).
+[^language-server-img-src]: The visualization is taken form the language server protocol documentation available [here](https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/).
 
-[^preserve-cursor-position]: For further information see [this stackexchange
-  discussion](https://vi.stackexchange.com/questions/7761/how-to-restore-the-position-of-the-cursor-after-executing-a-normal-command),
-  from which the command originated.
+[^preserve-cursor-position]: For further information see [this stackexchange discussion](https://vi.stackexchange.com/questions/7761/how-to-restore-the-position-of-the-cursor-after-executing-a-normal-command), from which the command originated.
 
-[^vim-highlighting]: Check out `:help highlight-cterm` and `:help
-  highlight-gui` for the available settings.
+[^vim-highlighting]: Check out `:help highlight-cterm` and `:help highlight-gui` for the available settings.
 
-[^additional-reference]: There was a further reference on the path to
-  accomplishing this
-  [here](https://daisuzu.hatenablog.com/entry/2019/12/06/005543) yet the
-  webpage seems down now.
-
+[^additional-reference]: There was a further reference on the path to accomplishing this [here](https://daisuzu.hatenablog.com/entry/2019/12/06/005543) yet the webpage seems down now.
