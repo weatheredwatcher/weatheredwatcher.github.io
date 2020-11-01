@@ -8,7 +8,8 @@ tags: [development]
 As a fan of the [Language Server
 Protocol](https://microsoft.github.io/language-server-protocol/) introduced by
 Microsoft, I was very excited to hear, that [NeoVim](https://neovim.io/) (an
-aggressive refactor of the Vim) will soon be shipping it's own language server.
+aggressive refactor of the Vim) will soon be shipping it's own language server
+client.
 
 Here I will show why I like the Language Server Protocol and how to configure
 the built-in language server client to make it a bit more user friendly.
