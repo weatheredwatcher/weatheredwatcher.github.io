@@ -1,16 +1,21 @@
 # Site settings
 title: Personal Webpage of Max Horn
 description: >
-    I'm a PhD Student in Machine Learning and Computational Biology at ETH
-    Zürich and work on the development of <b>deep learning methods for real world
-    medical time series</b>.<br />
+    I work as a Applied Scientist for AWS AI where I explore the intersection of Machine Learning,
+    Deep Learning and Causality. In particular, I am interested building models that understand
+    notions of objects present in the real world.<br />
+
+    Prior to my position at AWS I was a PhD Student in Machine Learning and Computational Biology
+    at ETH Zürich and worked on the development of <b>deep learning methods for real world
+    medical time series</b>, <b>Dimensionality Reduction</b> and <b>Topological Machine Learning</b>.<br />
 
     My interests include but are not limited to: <b>Machine Learning for
     Healthcare</b>, <b>Probabilistic Modelling</b>, <b>Time Series Modelling</b> and
     <b>Interpretable Machine Learning</b>.<br />
 
-    Here I write about stuff I care about in the realm of science, programming
-    and technology.
+    Here I write about stuff I care about in the realm of science, programming,
+    technology and crypto.  All opinions expressed are solely my own and do not
+    express the views or opinions of my employer.
 url: 'https://ExpectationMax.github.io'
 baseurl: ''
 google_analytics: 'UA-167128850-1'
