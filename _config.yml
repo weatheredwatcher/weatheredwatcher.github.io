@@ -1,34 +1,22 @@
 # Site settings
-title: Personal Webpage of Max Horn
+title: Personal Webpage of David Duggins
 description: >
-    I work as a Applied Scientist for AWS AI where I explore the intersection of Machine Learning,
-    Deep Learning and Causality. In particular, I am interested building models that understand
-    notions of objects present in the real world.<br />
-
-    Prior to my position at AWS I was a PhD Student in Machine Learning and Computational Biology
-    at ETH Zürich and worked on the development of <b>deep learning methods for real world
-    medical time series</b>, <b>Dimensionality Reduction</b> and <b>Topological Machine Learning</b>.<br />
-
-    My interests include but are not limited to: <b>Machine Learning for
-    Healthcare</b>, <b>Probabilistic Modelling</b>, <b>Time Series Modelling</b> and
-    <b>Interpretable Machine Learning</b>.<br />
-
-    Here I write about stuff I care about in the realm of science, programming,
-    technology and crypto.  All opinions expressed are solely my own and do not
-    express the views or opinions of my employer.
-url: 'https://ExpectationMax.github.io'
+    I work as a senior php developer for a site that teaches how to play the guitar
+    My interests include: playing TTRPG such as Pathfinder and D&D, playing the guitar and
+    reading books..
+url: 'https://weatheredwatcher.github.io'
 baseurl: ''
-google_analytics: 'UA-167128850-1'
-disqus_shortname: 'ExpectationMax'
+# google_analytics: 'UA-167128850-1'
+disqus_shortname: 'weatheredwatcher'
 
 author:
-  name: 'Max Horn'
-  email: maexlich@gmail.com
-  twitter_username: ExpectationMax
+  name: 'David Duggins'
+  email: david@duggins.net
+  # twitter_username: davidduggins
   cv_path: assets/Max_Horn-CV.pdf
-#  facebook_username: joshgerdes
-  github_username:  ExpectationMax
-  linkedin_username:  max-horn-ml
+  reddit_username: weatheredwatcher
+  github_username:  weatheredwatcher
+  #  linkedin_username:  davidduggins
 
 defaults:
   -
@@ -59,4 +47,5 @@ kramdown:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'vendor']

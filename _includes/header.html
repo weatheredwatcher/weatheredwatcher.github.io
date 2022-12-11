@@ -3,13 +3,13 @@
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
 
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/bg.jpg)">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <img src="{{ site.baseurl }}/images/avatar.png" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -44,12 +44,12 @@
               </li>
             {% endif %}
 
-            {% if site.author.facebook_username %}
+            {% if site.author.reddit_username %}
               <!-- Facebook -->
               <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
+                <a href="https://www.reddit.com/user/{{ site.author.reddit_username }}" title="{{ site.author.reddit_username }} on Reddit" target="_blank">
+                  <i class="icon icon-social-reddit"></i>
+                  <span class="label">Reddit</span>
                 </a>
               </li>
             {% endif %}
