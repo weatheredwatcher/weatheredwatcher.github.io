@@ -1,9 +1,17 @@
 # Site settings
 title: Personal Webpage of David Duggins
 description: >
-    I work as a senior php developer for a site that teaches how to play the guitar
-    My interests include: playing TTRPG such as Pathfinder and D&D, playing the guitar and
-    reading books..
+    Well, I was born on a normal day in July, 1981 and have been creating chaos ever since. 
+    Born in North Carolina, but raised in the aftermath of the Soviet Union, Kazakhstan, 
+    I have been messing around with computers nearly my entire life. I wrote my first program 
+    in assembly when I was 11. In my early teens I ran a BBS connected to Fidonet and started 
+    building a website for my band. In 1999 I was introduced to Linux, and it was love at first compile. 
+    I started my career in IT in the early 2000's doing IT for a Car Dealership in Charlotte NC. 
+    I wrote my first major web app in Cold Fusion (an ecom app) at that time. 
+    In 2006 I left Charlotte and moved down to Columbia where starting working as a developer, freelancer and consultant.
+    Currently I am the senior developer at a company that offer guitar lessons online!!
+
+ 
 url: 'https://weatheredwatcher.github.io'
 baseurl: ''
 # google_analytics: 'UA-167128850-1'
