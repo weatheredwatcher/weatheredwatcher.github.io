@@ -25,7 +25,7 @@ defaults:
       type: 'posts'
     values:
         layout: 'post'
-        comments: true
+        comments: false
 
 # Build settings
 destination: _site
