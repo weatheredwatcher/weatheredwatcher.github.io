@@ -9,7 +9,7 @@ description: >
     I started my career in IT in the early 2000's doing IT for a Car Dealership in Charlotte NC. 
     I wrote my first major web app in Cold Fusion (an ecom app) at that time. 
     In 2006 I left Charlotte and moved down to Columbia where starting working as a developer, freelancer and consultant.
-    Currently I am the senior developer at a company that offer guitar lessons online!!
+    Currently I am working as a freelance developer and DevOps consultant!!
 
  
 url: 'https://weatheredwatcher.github.io'
@@ -22,9 +22,9 @@ author:
   email: david@duggins.net
   # twitter_username: davidduggins
   cv_path: assets/duggins-resume.pdf
-  reddit_username: weatheredwatcher
+  #reddit_username: weatheredwatcher
   github_username:  weatheredwatcher
-  #  linkedin_username:  davidduggins
+  linkedin_username:  davidduggins
 
 defaults:
   -
@@ -34,6 +34,12 @@ defaults:
     values:
         layout: 'post'
         comments: false
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title
+
 
 # Build settings
 destination: _site
@@ -45,9 +51,8 @@ highlighter: rouge
 sass:
     sass_dir: _sass
     style: compressed
-
 kramdown:
-  # use Github Flavored Markdown
+  # use Github Flavored 
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
