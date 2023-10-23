@@ -21,3 +21,8 @@ might need while allowing you the site you are working on in the main window.  A
 can also port over easily enough, and it is plain that this is a great browser!  I personal have decided to use it again!
 
 ![Vivaldi in Action](/assets/vivaldi.png)
+
+UPDATE:
+
+I did finally get Arc up and running.  Weird bug in the Wizard I guess!  I have given it a bit of a try and I honestly prefer Vivaldi!  Arc is
+a fine browser and I am sure it will work just fine for normal users, but as a power user, it is not quite the same!
