@@ -13,15 +13,15 @@ task :post do
 
     File.open(file, "w") do |f|
         f << <<-EOS.gsub(/^     /, '')
-    ---
-    date: "#{Date.today}"
-    date_published: "#{Date.today}"
-    date_updated: "#{Date.today}"
-    slug: "#{title.downcase.gsub(/[^\w]+/,'-')}"
-    title: #{title}
-    tags: []
-    type: "post"
-    ---
+---
+date: "#{Date.today}"
+date_published: "#{Date.today}"
+date_updated: "#{Date.today}"
+slug: "#{title.downcase.gsub(/[^\w]+/,'-')}"
+title: #{title}
+tags: []
+type: "post"
+---
 
         EOS
     end

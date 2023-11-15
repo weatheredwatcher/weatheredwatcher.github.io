@@ -17,6 +17,7 @@ My personal blog and website.
 * CV Download
 * Projects Pages
 
+
 ---
 
 ### Copyright and license
