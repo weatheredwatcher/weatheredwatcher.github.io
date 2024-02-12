@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2> How this site is made <h2>
+<h2> How this site is made </h2>
 
 <ul>
 
