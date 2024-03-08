@@ -40,6 +40,9 @@ collections:
     output: true
     permalink: /:collection/:title
 
+maps:
+    google:
+      api_key: AIzaSyAKIUZyazA30kSvO1L7_ddfRZ434kVYWzQ
 
 # Build settings
 destination: _site
@@ -61,4 +64,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-leaflet
+
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'vendor']

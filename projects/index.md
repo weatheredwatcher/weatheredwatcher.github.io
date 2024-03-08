@@ -1,5 +1,8 @@
 ---
 layout: default
+location:
+    latitude: 51.5285582
+    longitude: -0.2416807
 ---
 
 <h2> How this site is made </h2>
@@ -22,3 +25,11 @@ layout: default
 <li> Active Web Development with Rails 7 </li>
 <li> Kubernetes Best Practices </li>
 </ul>
+
+
+{% leaflet_map {"zoom" : 10 } %}
+
+    {% leaflet_marker { "latitude" : 34.0885,
+                       "longitude" : -81.1804,
+                       "popupContent" : "Irmo, South Carolina"} %}
+{% endleaflet_map %}
