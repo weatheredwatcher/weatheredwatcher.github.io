@@ -16,7 +16,7 @@ url: 'https://weatheredwatcher.github.io'
 baseurl: ''
 google_analytics: 'G-0H2CLMW2VQ'
 disqus_shortname: 'weatheredwatcher'
-
+site_build_version: 30 # Use this to bump a build if needed
 author:
   name: 'David Duggins'
   email: david@duggins.net
