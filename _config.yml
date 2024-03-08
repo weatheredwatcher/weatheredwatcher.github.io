@@ -14,7 +14,7 @@ description: >
  
 url: 'https://weatheredwatcher.github.io'
 baseurl: ''
-# google_analytics: 'UA-167128850-1'
+google_analytics: 'G-0H2CLMW2VQ'
 disqus_shortname: 'weatheredwatcher'
 
 author:
