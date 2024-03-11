@@ -42,7 +42,7 @@ collections:
 
 maps:
     google:
-      api_key: AIzaSyAKIUZyazA30kSvO1L7_ddfRZ434kVYWzQ
+      api_key: ENV_GOOGLE_API_KEY
 
 # Build settings
 destination: _site
