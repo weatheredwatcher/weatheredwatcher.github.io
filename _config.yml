@@ -40,10 +40,6 @@ collections:
     output: true
     permalink: /:collection/:title
 
-maps:
-    google:
-      api_key: ENV_GOOGLE_API_KEY
-
 # Build settings
 destination: _site
 paginate: 10
