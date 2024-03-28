@@ -4,14 +4,13 @@ layout: default
 
 <h2> How this site is made </h2>
 
-<ul>
-
+  <ul>
   <li> This site is made with Jekyll and Ruby</li>
   <li> I use neovim for my editor </li>
   <li> Workstation: MacBook Air</li>
-  <li> Personal Server: System 76 Laptop Running Debian
+  <li> Personal Server: System 76 Laptop Running Debian</li>
   <li> This site is hosted on GitHub Pages </li>
-</ul>
+  </ul>
 
 <h2> Stuff I am working on </h2>
 <ul>
